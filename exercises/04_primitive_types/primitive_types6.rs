@@ -11,8 +11,12 @@
 #[test]
 fn indexing_tuple() {
     let numbers = (1, 2, 3);
-    // Replace below ??? with the tuple indexing syntax.
-    let second = ???;
+
+    // Lausn 1
+    let (first, second, third) = numbers;
+
+    // Lausn 2 (Réttari lausn)
+    let second = numbers.1;
 
     assert_eq!(2, second,
         "This is not the 2nd number in the tuple!")
